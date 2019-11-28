@@ -1,6 +1,9 @@
 ﻿# -*- coding: utf-8 -*-
 
-from Graph import Graph
+import sys
+sys.path.insert(0, "..")
+
+from Expression.Graph import Graph
 
 class SingleSourcePath():
     

@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 23 23:47:13 2019
 
-@author: mi
-"""
-import Graph
+import sys
+sys.path.insert(0, '..')
+
+from Expression.Graph import Graph
 
 class DFS():
     
@@ -30,7 +29,7 @@ class DFS():
         
 if __name__ == "__main__":
     
-    g = Graph.Graph("g.txt")
+    g = Graph("g.txt")
     dfs = DFS(g)
     print(dfs.res())
     

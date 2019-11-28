@@ -1,6 +1,8 @@
-﻿
+﻿import sys
+sys.path.insert(0, "..")
 
-from Graph import Graph
+
+from Expression.Graph import Graph
 
 class Path():
     

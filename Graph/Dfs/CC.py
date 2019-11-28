@@ -1,5 +1,8 @@
+import sys
+sys.path.insert(0, "..")
 
-import Graph
+from Expression.Graph import Graph
+
 
 class CC():
 
@@ -27,6 +30,6 @@ class CC():
 
 
 if __name__ == "__main__":
-    g = Graph.Graph("g.txt")
+    g = Graph("g.txt")
     cc = CC(g)
     print(cc.count())
