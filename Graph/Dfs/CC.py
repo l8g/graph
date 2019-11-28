@@ -3,7 +3,6 @@ sys.path.insert(0, "..")
 
 from Expression.Graph import Graph
 
-
 class CC():
 
     def __init__(self, g):
