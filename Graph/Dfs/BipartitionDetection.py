@@ -27,19 +27,19 @@ class BipartitionDetection():
                 return False
         return True
 
-    def isPipartite(self):
+    def isBipartite(self):
         return self._isBipartite
 
 
 if __name__ == "__main__":
     g = Graph('g.txt')
     bd = BipartitionDetection(g)
-    print(bd.isPipartite())
+    print(bd.isBipartite())
 
     g2 = Graph("g2.txt")
     bd2 = BipartitionDetection(g2)
-    print(bd2.isPipartite())
+    print(bd2.isBipartite())
 
     g3 = Graph("g3.txt")
     bd3 = BipartitionDetection(g3)
-    print(bd3.isPipartite())
+    print(bd3.isBipartite())

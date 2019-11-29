@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 24 00:09:12 2019
 
-@author: mi
-"""
-
+import sys
+sys.path.insert(0, "../Expression")
 from collections import deque
-import Graph
+from Graph import Graph
 
 class BFS():
     
@@ -38,6 +35,6 @@ class BFS():
     
 
 if __name__ == "__main__":
-    g = Graph.Graph("g.txt")
+    g = Graph("g.txt")
     bfs = BFS(g)
     print(bfs.res())
