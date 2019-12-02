@@ -18,7 +18,7 @@ class BipartitionDetection():
             if not self._visited[v]:
                 if not self._bfs(v, 0):
                     self._isBipartite = False
-                    break;
+                    break
 
     def _bfs(self, v, color):
         self._visited[v] = True
@@ -26,7 +26,7 @@ class BipartitionDetection():
         queue = deque()
         queue.append(v)
         while len(queue) > 0:
-            curr = queue.popleft();
+            curr = queue.popleft()
             for w in self._g.adj(curr):
                 if not self._visited[w]:
                     self._visited[w] = True
@@ -40,7 +40,7 @@ class BipartitionDetection():
         
 
     def isBipartite(self):
-        return self._isBipartite;
+        return self._isBipartite
 
 
 
